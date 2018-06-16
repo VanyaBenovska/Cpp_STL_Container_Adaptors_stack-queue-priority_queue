@@ -1,0 +1,39 @@
+Problem 05_04_Brackets
+Write a program which reads a single line from the console, containing brackets for a mathematical expression 
+(only the brackets will appear in the input), and determines whether the brackets in the expression are correct. 
+There are 3 types of brackets – {}, [] and (). {} can contain {}, [] and () brackets. 
+Square brackets [] can contain [] and () brackets. Curved () brackets can contain only () brackets. 
+Said simply, each type of brackets can contain the same type of brackets inside, or 
+a “lower” type of brackets (() is lower than [] which is lower than {}). If a bracket of one type is opened, 
+it needs to be closed before a bracket of another type is closed.
+Print valid if the brackets in the expression are valid and invalid if they are not.
+
+Examples
+Input01	
+[()]{}{[()()]()}
+Output:	valid
+
+Input02
+[(])	
+Output: invalid
+
+Input03:
+([])	
+Output: invalid
+
+Input04:
+()[[[()]]]{[()]}
+Output:	valid
+
+Input05:
+{{{[[[((()))()()()]]]}}}
+Output: valid
+
+Input06:
+{
+Output: invalid
+
+Input07:
+)
+Output: invalid
+
